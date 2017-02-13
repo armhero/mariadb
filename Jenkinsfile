@@ -26,6 +26,8 @@ node('armv7') {
         else
           sudo docker push armhero/mariadb:${BRANCH_NAME}
         fi
+
+        curl -X POST https://hooks.microbadger.com/images/armhero/mariadb/aZ8T_dQAnmO3iDGAjq15j1Bwn8M=
       '''
     }
   }
