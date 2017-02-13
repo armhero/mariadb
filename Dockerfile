@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM armhero/alpine:3.5
 
 ENV LC_ALL=en_GB.UTF-8
 
