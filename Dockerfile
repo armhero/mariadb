@@ -2,8 +2,8 @@ FROM armhero/alpine:3.5
 
 ENV LC_ALL=en_GB.UTF-8
 
-RUN apk --no-cache -U upgrade \
-  && apk --no-cache --update add \
+RUN apk upgrade --update --no-cache \
+  && apk add --no-cache --update \
     mariadb \
     mariadb-client \
   && mkdir /docker-entrypoint-initdb.d \
